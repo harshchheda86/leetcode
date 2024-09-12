@@ -7,8 +7,8 @@
 
 int main()
 {
-    std::shared_ptr<List<uint32_t>> list1 = std::make_shared<List<uint32_t>>();
-    std::shared_ptr<List<float>> list2 = std::make_shared<List<float>>();
+    std::shared_ptr<SinglyList<uint32_t>> list1 = std::make_shared<SinglyList<uint32_t>>();
+    std::shared_ptr<SinglyList<float>> list2 = std::make_shared<SinglyList<float>>();
 
     std::vector<Node<uint32_t>> nodes1 = { Node<uint32_t>(2), Node<uint32_t>(6), Node<uint32_t>(3), Node<uint32_t>(0), Node<uint32_t>(8), };
     std::vector<Node<float>> nodes2 = { Node<float>(2.2), Node<float>(6.6), Node<float>(3.3), Node<float>(0.0), Node<float>(8.8), };

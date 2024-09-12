@@ -3,12 +3,12 @@
 #include <iostream>
 
 template<typename T>
-class List;
+class SinglyList;
 
 template<typename T>
 class Node
 {
-    friend class List<T>;
+    friend class SinglyList<T>;
 private:
     T data;
     Node* next;
@@ -22,7 +22,7 @@ public:
 };
 
 template <typename T>
-class List
+class SinglyList
 {
 private:
     Node<T>* Head;
@@ -39,7 +39,7 @@ private:
     }
 
 public:
-    List()
+    SinglyList()
     {
         Head = Tail = nullptr;
     }
