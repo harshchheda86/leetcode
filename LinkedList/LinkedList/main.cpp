@@ -2,8 +2,10 @@
 //
 
 #include <iostream>
-#include "LinkedList.h"
 #include <vector>
+
+#include "LinkedList.h"
+#include "Stack.h"
 
 int main()
 {
@@ -12,6 +14,8 @@ int main()
 
     std::vector<Node<uint32_t>> nodes1 = { Node<uint32_t>(2), Node<uint32_t>(6), Node<uint32_t>(3), Node<uint32_t>(0), Node<uint32_t>(8), };
     std::vector<Node<float>> nodes2 = { Node<float>(2.2), Node<float>(6.6), Node<float>(3.3), Node<float>(0.0), Node<float>(8.8), };
+
+    std::shared_ptr<MyStack<uint32_t>> stack1;
 
     for (uint32_t i = 0; i < nodes1.size(); i++)
     {

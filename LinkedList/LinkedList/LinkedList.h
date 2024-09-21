@@ -79,6 +79,23 @@ public:
         Head = node;
     }
 
+    Node<T> RemoveHeadElement()
+    {
+        Node<T> Head = Head->next;
+
+        return Head;
+    }
+
+    Node<T> GetHead()
+    {
+        return Head;
+    }
+
+    bool IsListEmpty()
+    {
+        return Head == nullptr;
+    }
+
     void RemoveElement(Node<T>* node)
     {
         if (!node) return;
